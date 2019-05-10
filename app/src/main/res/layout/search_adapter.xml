@@ -5,11 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="2dp"
-    android:layout_marginRight="2dp"
-    android:layout_marginTop="2.5dp"
-    app:cardCornerRadius="6dp"
-    app:cardElevation="3dp">
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="4dp"
+    app:cardElevation="4dp">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
@@ -32,6 +33,8 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/github_logo"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,8 +54,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Name :"
-                        android:textColor="@color/black_60"
-                        android:textSize="14dp" />
+                        android:textStyle="bold"
+                        android:textColor="#868686"
+                        android:textSize="12dp" />
 
 
                     <TextView
@@ -63,8 +67,9 @@
                         android:layout_marginRight="15dp"
                         android:maxLength="35"
                         android:singleLine="true"
-                        android:textColor="@color/black_60"
-                        android:textSize="14dp" />
+                        android:textStyle="bold"
+                        android:textColor="#868686"
+                        android:textSize="12dp" />
 
 
                 </LinearLayout>
@@ -79,8 +84,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="About :"
-                        android:textColor="@color/black_60"
-                        android:textSize="14dp" />
+                        android:textColor="#868686"
+                        android:textSize="13dp" />
 
                     <TextView
                         android:id="@+id/sa_description"
@@ -90,9 +95,9 @@
                         android:layout_marginLeft="20dp"
                         android:maxLines="1"
                         android:text="Not Found!"
-                        android:textColor="@color/black_60"
+                        android:textColor="#868686"
                         android:singleLine="true"
-                        android:textSize="14dp" />
+                        android:textSize="13dp" />
 
 
                 </LinearLayout>
@@ -105,11 +110,11 @@
         <View
             android:id="@+id/sa_partition_view"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:layout_marginBottom="4dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="4dp"
-            android:background="@color/partition" />
+            android:background="#F5F5F5" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -128,18 +133,19 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_fork"/>
+                    android:layout_width="22dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#F44336"
+                    android:background="@drawable/ic_fork"/>
 
 
                 <TextView
                     android:id="@+id/sa_forks_count"
                     android:layout_width="wrap_content"
                     android:layout_marginLeft="2dp"
-                    android:textSize="15dp"
-                    android:textColor="@color/black_80"
+                    android:textSize="13dp"
+                    android:textColor="#838383"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
@@ -154,18 +160,19 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:padding="1.5dp"
-                    android:src="@drawable/ic_star"/>
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:background="@drawable/ic_star"/>
 
                 <TextView
                     android:id="@+id/sa_stars_count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     android:layout_marginLeft="2dp"
-                    android:textColor="@color/black_80" />
+                    android:textColor="#838383" />
 
             </LinearLayout>
 
@@ -178,18 +185,19 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:padding="4dp"
-                    android:src="@drawable/ic_score"/>
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#4CAF50"
+                    android:background="@drawable/ic_score"/>
 
                 <TextView
                     android:id="@+id/sa_score"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15dp"
+                    android:textSize="13dp"
                     android:layout_marginLeft="2dp"
-                    android:textColor="@color/black_80" />
+                    android:textColor="#838383" />
 
 
             </LinearLayout>

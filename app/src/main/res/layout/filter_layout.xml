@@ -9,29 +9,30 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="15dp"
-        android:text="Filter"
-        android:textColor="@color/black_80"
+        android:text="Filters"
+        android:textColor="@color/black_60"
         android:layout_alignParentTop="true"
-        android:textSize="18dp"/>
+        android:textSize="20dp"/>
 
     <ImageView
         android:id="@+id/fl_cross"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:padding="6dp"
         android:text="Filter"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="12dp"
         android:src="@drawable/ic_cross_black"
+        android:backgroundTint="@color/black_60"
         android:layout_marginRight="15dp"
         android:textSize="16dp"/>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1.2dp"
-        android:layout_marginTop="2dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/fl_cross"
-        android:background="@color/light_black"/>
+        android:background="#C7E8FF"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -45,9 +46,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:textColor="@color/black_60"
-            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#969696"
+            android:layout_marginTop="10dp"
             android:text="Sort By"/>
 
 
@@ -57,22 +59,22 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
+            android:weightSum="3"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
                 android:textColor="@color/black_60"
                 android:text="Stars"/>
 
-
             <Switch
                 android:id="@+id/fl_stars"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:switchMinWidth="50dp"
-                android:layout_marginLeft="150dp"/>
+                android:switchMinWidth="50dp"/>
 
 
         </LinearLayout>
@@ -82,10 +84,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:weightSum="3"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
                 android:textColor="@color/black_60"
@@ -96,7 +100,6 @@
                 android:id="@+id/fl_forks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
                 android:switchMinWidth="50dp"/>
 
 
@@ -107,10 +110,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:weightSum="3"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black_60"
                 android:textSize="15dp"
@@ -121,114 +126,30 @@
                 android:id="@+id/fl_updated_on"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="105dp"
                 android:switchMinWidth="50dp"/>
 
 
         </LinearLayout>
-
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.8dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/grey"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="16dp"
-            android:textColor="@color/black_60"
-            android:text="Select Date Range"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="20dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:padding="2dp"
-                    android:layout_marginTop="3dp"
-                    android:src="@drawable/ic_start_date"/>
-
-
-                <TextView
-                    android:id="@+id/fl_sd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:layout_marginLeft="4dp"
-                    android:textSize="15dp"
-                    android:hint="Start Date"
-                    android:textColor="@color/black_60"/>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-
-                <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:padding="2dp"
-                    android:layout_marginTop="3dp"
-                    android:layout_marginLeft="85dp"
-                    android:src="@drawable/ic_end_date"/>
-
-
-                <TextView
-                    android:id="@+id/fl_ed"
-                    android:hint="End Date"
-                    android:layout_marginLeft="4dp"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black_60"
-                    />
-
-            </LinearLayout>
-
-
-
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.8dp"
+            android:layout_height="3dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
-            android:background="@color/grey"/>
+            android:background="#F5F5F5"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop = "20dp"
-            android:textSize="16dp"
-            android:textColor="@color/black_60"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#969696"
             android:text="Order by"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="20dp"
             android:orientation="horizontal">
 
@@ -259,13 +180,98 @@
 
 
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#F5F5F5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#969696"
+            android:text="Select Date Range"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="2dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_date_range_black_24dp"/>
+
+
+                <TextView
+                    android:id="@+id/fl_sd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="15dp"
+                    android:hint="Start Date"
+                    android:textColor="@color/black_60"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="85dp"
+                    android:src="@drawable/ic_date_range_black_24dp"/>
+
+
+                <TextView
+                    android:id="@+id/fl_ed"
+                    android:hint="End Date"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_60"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.8dp"
+            android:layout_height="3dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/grey"/>
+            android:background="#F5F5F5"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -277,9 +283,9 @@
             <TextView
                 android:id="@+id/fl_apply_all"
                 android:layout_width="110dp"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:padding="3dp"
+                android:padding="8dp"
                 android:gravity="center"
                 android:layout_marginRight="30dp"
                 android:textSize="15dp"
@@ -291,10 +297,11 @@
             <TextView
                 android:id="@+id/fl_clear_all"
                 android:layout_width="110dp"
-                android:layout_height="30dp"
+                android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:padding="3dp"
-                android:layout_marginLeft="30dp"
+                android:padding="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20sp"
                 android:gravity="center"
                 android:textSize="15dp"
                 android:layout_below="@+id/linearLayout"

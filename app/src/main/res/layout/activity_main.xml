@@ -1,75 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:layout_width="match_parent">
+    android:background="@color/white">
 
     <com.lapism.searchview.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:background="@color/mapprr_blue"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
+        android:background="@color/mapprr_blue"
         android:paddingLeft="5dp"
+        android:paddingTop="20dp"
         android:paddingRight="5dp"
-        app:search_logo="google"
-        app:search_logo_color="#fff"
         android:paddingBottom="5dp"
+        app:search_logo="google"
         app:search_shape="rounded"
-        app:search_background_color="@color/white"
-        app:search_text_color="#3C3C3C"
-        app:search_hint="kkkkkkkkkkk"
+        app:search_text_color="#3C3C3C" />
 
-        />
+    <!--app:search_logo_color="#fff"-->
 
-    <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:id="@+id/am_filter_image"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="35dp"
-        android:background="@drawable/filter_icon"
-        android:layout_alignParentRight="true"/>
+
+    <!--<ImageView-->
+    <!--android:layout_width="32dp"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginTop="35dp"-->
+    <!--android:background="@drawable/filter_icon"-->
+    <!--android:layout_alignParentRight="true"/>-->
 
     <android.support.v7.widget.RecyclerView
-    android:id="@+id/search_adapter"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:visibility="visible"
-    android:layout_below="@+id/searchView"
-    tools:context="com.java.githubsearch.activities.MainActivity">
-
-
-
-</android.support.v7.widget.RecyclerView>
-
-    <include layout="@layout/empty_content"/>
-
-    <include layout="@layout/filter_layout"
-        android:id="@+id/am_filter"
+        android:id="@+id/search_adapter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:layout_below="@+id/searchView"/>
+        android:layout_below="@+id/searchView"
+        android:visibility="visible"
+        android:background="#F0F0F0"
+        tools:context="com.kumarbusem.githubsearch.activities.MainActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginBottom="30dp"
-        app:civ_border_width="0.8dp"
-        app:civ_fill_color="@color/mapprr_blue"
-        app:civ_border_color="@color/mapprr_blue"
-        android:elevation="5dp"
-        android:src="@drawable/ic_filter"
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include layout="@layout/empty_content" />
+
+    <include
+        android:id="@+id/am_filter"
+        layout="@layout/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchView"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/am_filter_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
-
-
-
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/mapprr_blue"
+        android:src="@drawable/filter" />
 
 
 </RelativeLayout>

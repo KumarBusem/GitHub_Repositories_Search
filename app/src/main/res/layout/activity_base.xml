@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.java.githubsearch.activities.BaseActivity">
+    tools:context="com.kumarbusem.githubsearch.activities.BaseActivity">
 
 </android.support.constraint.ConstraintLayout>
