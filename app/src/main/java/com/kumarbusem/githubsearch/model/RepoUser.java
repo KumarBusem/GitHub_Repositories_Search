@@ -1,8 +1,5 @@
 package com.kumarbusem.githubsearch.model;
 
-/**
- * Created by achau on 29-12-2017.
- */
 
 public class RepoUser {
 

@@ -5,9 +5,6 @@ import com.kumarbusem.githubsearch.utility.Constants;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by achau on 27-12-2017.
- */
 
 public class ApiClient {
 

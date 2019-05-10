@@ -8,9 +8,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 
-/**
- * Created by achau on 28-12-2017.
- */
 
 public interface GetContributors {
 

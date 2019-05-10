@@ -8,9 +8,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Created by achau on 28-12-2017.
- */
 
 public class GetContributorsCallback implements Callback<List<Contributors>> {
 

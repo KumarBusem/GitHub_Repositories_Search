@@ -8,9 +8,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Created by achau on 29-12-2017.
- */
 
 public class GetReposCallback implements Callback<List<Repository>> {
 

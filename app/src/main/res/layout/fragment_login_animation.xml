@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="18">
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:autoStart="true"
+            android:flipInterval="3000" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/mapprr_blue"
+                android:weightSum="13">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    android:src="@drawable/login_pic1"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/mapprr_blue"
+                    android:layout_weight="1.5"
+                    android:text="Electronics, Pharmacy, Books, Stationary....\n We deliver Everything"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:background="#1a1c26"-->
+                <!--android:weightSum="13">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="11.5"-->
+                    <!--android:src="@drawable/login_pic1"-->
+                    <!--android:scaleType="fitXY"/>-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1.5"-->
+                    <!--android:background="#1a1c26"-->
+                    <!--android:text="Select Pickup, Delivery Locations and Item type"-->
+                    <!--android:gravity="center"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="18sp"/>-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mapprr_blue"
+                android:orientation="vertical"
+                android:weightSum="13">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11.5"
+                    android:src="@drawable/login_pic2"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/mapprr_blue"
+                    android:layout_weight="1.5"
+                    android:text="Fast and Approved Delivery Boys"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </ViewFlipper>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:background="#DFE6EC">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:weightSum="40">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="24sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="7">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Login/Signup with OTP"
+                    android:textColor="#78797A" />
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="12"
+                android:gravity="center_vertical"
+                android:hint="10 digit mobile number">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/phoneNumberDelivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="phone"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:paddingBottom="12sp"
+                    android:shadowColor="@color/colorAccent"
+                    android:singleLine="true"
+                    android:textColor="#353941"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="#616161"
+                    android:textCursorDrawable="@null"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="8"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Login/Sign Up"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:id="@+id/loginPasswordButton"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Login/Signup with Password"
+                android:textColor="#00AC4C" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

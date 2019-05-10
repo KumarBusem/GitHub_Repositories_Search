@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#1d87e4</color>
     <color name="colorPrimaryDark">#1d87e4</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#03DA63</color>
     <color name="partition">#dad4d4</color>
     <color name="black_80">#fd000000</color>
     <color name="white">#ffffff</color>

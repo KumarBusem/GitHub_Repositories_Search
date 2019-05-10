@@ -16,9 +16,6 @@ import com.kumarbusem.githubsearch.utility.Constants;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by achau on 29-12-2017.
- */
 
 public class RepoAdapter extends RecyclerView.Adapter<RepoHolder> {
 

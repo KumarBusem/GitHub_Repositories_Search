@@ -1,8 +1,10 @@
 package com.kumarbusem.githubsearch.utility;
 
-/**
- * Created by achau on 27-12-2017.
- */
+import android.app.Activity;
+import android.content.Context;
+
+import com.kumarbusem.githubsearch.activities.LoginActivity;
+
 
 public class Constants {
     public static String BASE_URL = "https://api.github.com/";
@@ -15,4 +17,5 @@ public class Constants {
 
 
     public static String FULL_NAME = "FULL_NAME";
+    public static Context context;
 }

@@ -11,9 +11,6 @@ import android.widget.TextView;
 import com.kumarbusem.githubsearch.R;
 import com.kumarbusem.githubsearch.activities.BaseActivity;
 
-/**
- * Created by achau on 28-12-2017.
- */
 
 public class Util {
 

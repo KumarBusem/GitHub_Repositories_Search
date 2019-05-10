@@ -19,9 +19,7 @@ import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by achau on 27-12-2017.
- */
+
 
 public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryHolder> {
 

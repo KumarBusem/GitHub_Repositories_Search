@@ -6,9 +6,6 @@ import android.widget.TextView;
 
 import com.kumarbusem.githubsearch.R;
 
-/**
- * Created by achau on 29-12-2017.
- */
 
 public class RepoHolder extends RecyclerView.ViewHolder {
 

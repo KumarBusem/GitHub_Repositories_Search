@@ -2,9 +2,6 @@ package com.kumarbusem.githubsearch.model;
 
 import java.util.ArrayList;
 
-/**
- * Created by achau on 28-12-2017.
- */
 
 public class RepoObject {
     ArrayList<Repository> items;

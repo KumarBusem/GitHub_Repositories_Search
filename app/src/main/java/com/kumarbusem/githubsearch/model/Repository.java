@@ -1,8 +1,5 @@
 package com.kumarbusem.githubsearch.model;
 
-/**
- * Created by achau on 27-12-2017.
- */
 
 public class Repository {
     public String full_name = "";

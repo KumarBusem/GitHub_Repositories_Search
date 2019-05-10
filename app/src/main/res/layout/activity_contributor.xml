@@ -202,12 +202,6 @@
         android:textStyle="bold"
         android:text="@string/repo" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#C7E8FF"
-        android:layout_below="@id/repo_text"/>
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/ac_recyclerview"
         android:layout_width="match_parent"
